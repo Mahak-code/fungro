@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro Student Hub | Earn While You Learn</title>
+    <meta name="description"
+        content="India's smartest student earning platform. Get real industry experience, internships, and skill development opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Space+Grotesk:wght@300;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Lucide Icons (via CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-logo">F<span>G</span></div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#">FUNN<span>GRO</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#" class="btn btn-outline">Login</a>
+                <a href="#" class="btn btn-primary shadow-glow">Start Earning</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="badge neon-text">✨ #1 Student Platform in India</div>
+                <h1 id="typing-text">Earn While You Learn</h1>
+                <p class="subheading">India's Smartest Student Earning Platform. Connect with top startups and build
+                    your career before you graduate.</p>
+                <div class="hero-btns">
+                    <button class="btn btn-primary btn-lg shadow-glow">Start Earning <i
+                            class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn-secondary btn-lg">Explore Projects</button>
+                </div>
+                <div class="floating-icons">
+                    <div class="floating-icon" style="--d: 0s;"><i class="fa-solid fa-code"></i></div>
+                    <div class="floating-icon" style="--d: 1s;"><i class="fa-solid fa-bullhorn"></i></div>
+                    <div class="floating-icon" style="--d: 2s;"><i class="fa-solid fa-brain"></i></div>
+                    <div class="floating-icon" style="--d: 3s;"><i class="fa-solid fa-pen-nib"></i></div>
+                    <div class="floating-icon" style="--d: 4s;"><i class="fa-solid fa-laptop-code"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="50000">0</span><span class="stat-suffix">+</span>
+                    <p>Students</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10000">0</span><span class="stat-suffix">+</span>
+                    <p>Projects</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-prefix">₹</span><span class="stat-number" data-target="2">0</span><span
+                        class="stat-suffix">Cr+</span>
+                    <p>Rewards</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-suffix">+</span>
+                    <p>Companies</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dashboard Section -->
+        <section id="dashboard" class="dashboard-section reveal">
+            <div class="section-header center">
+                <h2 class="gradient-text">Your Earning Command Center</h2>
+                <p>Track your growth and rewards in real-time with our sleek dashboard.</p>
+            </div>
+            <div class="dashboard-mockup glass-card">
+                <div class="dashboard-sidebar">
+                    <div class="sidebar-item active"><i data-lucide="layout-dashboard"></i></div>
+                    <div class="sidebar-item"><i data-lucide="briefcase"></i></div>
+                    <div class="sidebar-item"><i data-lucide="wallet"></i></div>
+                    <div class="sidebar-item"><i data-lucide="trophy"></i></div>
+                    <div class="sidebar-item"><i data-lucide="settings"></i></div>
+                </div>
+                <div class="dashboard-content">
+                    <div class="db-header">
+                        <h3>Welcome Back, <span class="neon-text">Mahak!</span></h3>
+                        <div class="db-user">
+                            <i data-lucide="bell" class="bell-icon"></i>
+                            <div class="user-avatar">MS</div>
+                        </div>
+                    </div>
+                    <div class="db-grid">
+                        <div class="db-card glass-inner hover-scale">
+                            <span class="card-label">Wallet Balance</span>
+                            <div class="card-value">₹185.00</div>
+                            <div class="card-trend up"><i class="fa-solid fa-arrow-up"></i> 12% boost</div>
+                        </div>
+                        <div class="db-card glass-inner hover-scale">
+                            <span class="card-label">Total Earned</span>
+                            <div class="card-value">₹20,450</div>
+                            <div class="card-trend up"><i class="fa-solid fa-arrow-up"></i> ₹2k this week</div>
+                        </div>
+                        <div class="db-card glass-inner hover-scale">
+                            <span class="card-label">Active Projects</span>
+                            <div class="card-value">13</div>
+                            <div class="card-progress">
+                                <div class="progress-bar-wrap">
+                                    <div class="progress-bar-fill" style="width: 65%;"></div>
+                                </div>
+                                <span>65% done</span>
+                            </div>
+                        </div>
+                        <div class="db-card glass-inner hover-scale">
+                            <span class="card-label">Rewards</span>
+                            <div class="card-value">7 Badges</div>
+                            <div class="spin-win-info">Spin & Win ready!</div>
+                        </div>
+                    </div>
+                    <div class="db-bottom">
+                        <div class="db-chart-card glass-inner">
+                            <h4>Earnings Growth</h4>
+                            <div class="chart-container">
+                                <canvas id="earningChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="db-referral glass-inner">
+                            <h4>Referral Income</h4>
+                            <div class="referral-flex">
+                                <div class="referral-stat">
+                                    <span class="val">₹4,200</span>
+                                    <span class="lbl">Total Referrals</span>
+                                </div>
+                                <button class="btn btn-neon btn-sm">Copy Link</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Cards Section -->
+        <section id="projects" class="projects-section reveal">
+            <div class="section-header animate-on-scroll">
+                <h2 class="gradient-text">Featured Projects</h2>
+                <p>Real tasks from real companies. Pick what you love and get paid.</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Card 1 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80"
+                            alt="Web Design">
+                        <span class="reward-tag">₹2,500</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Web Design Challenge</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Intermediate</span>
+                            <span><i class="fa-solid fa-clock"></i> 5 Days</span>
+                        </div>
+                        <p>Create a modern landing page for a sustainable fashion brand.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&w=500&q=80"
+                            alt="Social Media">
+                        <span class="reward-tag">₹1,800</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Social Media Marketing</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Beginner</span>
+                            <span><i class="fa-solid fa-clock"></i> 7 Days</span>
+                        </div>
+                        <p>Manage Instagram and Twitter posts for a tech startup.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=500&q=80"
+                            alt="AI Writing">
+                        <span class="reward-tag">₹3,000</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Content Writing</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Advanced</span>
+                            <span><i class="fa-solid fa-clock"></i> 3 Days</span>
+                        </div>
+                        <p>Draft technical articles about LLMs and safe AI integration.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80"
+                            alt="Java Developer">
+                        <span class="reward-tag">₹15,000</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Java Developer Internship</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Pro</span>
+                            <span><i class="fa-solid fa-clock"></i> 2 Months</span>
+                        </div>
+                        <p>Backend development role at an e-commerce giant.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Card 5 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80"
+                            alt="Cyber Security">
+                        <span class="reward-tag">₹5,000</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Cyber Security Task</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Expert</span>
+                            <span><i class="fa-solid fa-clock"></i> 10 Days</span>
+                        </div>
+                        <p>Conduct a vulnerability assessment for a fintech app.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="project-card glass-card tilt-card">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=500&q=80"
+                            alt="Graphic Design">
+                        <span class="reward-tag">₹2,200</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Graphic Design Project</h3>
+                        <div class="project-meta">
+                            <span><i class="fa-solid fa-signal"></i> Creative</span>
+                            <span><i class="fa-solid fa-clock"></i> 4 Days</span>
+                        </div>
+                        <p>Design a brand kit including logo and social media covers.</p>
+                        <button class="btn btn-outline-neon full-width">Apply Now</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section reveal">
+            <div class="section-header center">
+                <h2 class="gradient-text">Why Choose Funngro?</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="banknote"></i></div>
+                    <h3>Real Earnings</h3>
+                    <p>Transparent payouts for every milestone you achieve.</p>
+                </div>
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="rocket"></i></div>
+                    <h3>Industry Experience</h3>
+                    <p>Work on live projects and build a professional portfolio.</p>
+                </div>
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="graduation-cap"></i></div>
+                    <h3>Internship Opportunities</h3>
+                    <p>Convert your projects into full-time internships.</p>
+                </div>
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Skill Development</h3>
+                    <p>Learn from mentors and grow your technical prowess.</p>
+                </div>
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="building"></i></div>
+                    <h3>Startup Exposure</h3>
+                    <p>Be a part of the next big thing in the Indian startup scene.</p>
+                </div>
+                <div class="feature-card glass-inner hover-glow">
+                    <div class="feature-icon"><i data-lucide="cpu"></i></div>
+                    <h3>AI Recommendations</h3>
+                    <p>Get project suggestions tailored to your skill set.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bonus: Why Companies Hire Section -->
+        <section class="companies-section reveal">
+            <div class="section-header center">
+                <h2 class="gradient-text">Why Companies Hire Through Funngro</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card glass-card">
+                    <div class="info-icon neon-text"><i class="fa-solid fa-tag"></i></div>
+                    <h4>Affordable Talent</h4>
+                    <p>Access high-quality work at competitive rates optimized for startups.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <div class="info-icon neon-text"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4>Fresh Ideas</h4>
+                    <p>Students bring modern perspectives and innovative solutions to problems.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <div class="info-icon neon-text"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Fast Learners</h4>
+                    <p>The younger generation adapts to new tools and tech overnight.</p>
+                </div>
+                <div class="info-card glass-card">
+                    <div class="info-icon neon-text"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h4>Digital-First</h4>
+                    <p>Natives of the digital era who understand the online ecosystem perfectly.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skill Progress Bars -->
+        <section class="skills-section reveal">
+            <div class="section-header center">
+                <h2 class="gradient-text">Level Up Your Skills</h2>
+            </div>
+            <div class="skills-container glass-card">
+                <div class="skill-bar-wrap">
+                    <div class="skill-info"><span>Coding</span><span class="perc">85%</span></div>
+                    <div class="bar">
+                        <div class="fill" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-info"><span>Marketing</span><span class="perc">70%</span></div>
+                    <div class="bar">
+                        <div class="fill" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-info"><span>UI/UX Design</span><span class="perc">92%</span></div>
+                    <div class="bar">
+                        <div class="fill" style="width: 92%;"></div>
+                    </div>
+                </div>
+                <div class="skill-bar-wrap">
+                    <div class="skill-info"><span>Content Writing</span><span class="perc">60%</span></div>
+                    <div class="bar">
+                        <div class="fill" style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonials" class="testimonials-section reveal">
+            <div class="section-header center">
+                <h2 class="gradient-text">Success Stories</h2>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card glass-card">
+                    <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+                    <p>“Funngro helped me earn my first income during B.Tech. The projects are actually fun!”</p>
+                    <div class="student-info">
+                        <div class="student-avatar">M</div>
+                        <div>
+                            <h4>Mahak Saxena</h4>
+                            <span>Computer Science Student</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional testimonials can be added here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section reveal">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2 class="gradient-text">Get in Touch</h2>
+                    <p>Have questions? We're here to help you start your journey.</p>
+                    <div class="contact-methods">
+                        <div class="method"><i class="fa-solid fa-envelope"></i> help@funngro.com</div>
+                        <div class="method"><i class="fa-solid fa-phone"></i> +91 6396305659</div>
+                        <div class="social-links">
+                            <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form glass-card">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="How can we help?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full-width">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-main">
+                <div class="footer-logo">FUNN<span>GRO</span></div>
+                <p>Empowering the next generation of Indian students through meaningful financial independence.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+                <div class="link-group">
+                    <h4>Students</h4>
+                    <ul>
+                        <li><a href="#">Find Projects</a></li>
+                        <li><a href="#">Refer & Earn</a></li>
+                        <li><a href="#">Guidelines</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Funngro Student Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Chatbot Button -->
+    <div id="ai-chatbot" class="ai-button glass-card hover-scale">
+        <i class="fa-solid fa-robot"></i>
+        <span>AI Mentor</span>
+    </div>
+
+    <!-- Daily Reward Popup -->
+    <div id="reward-popup" class="reward-popup glass-card hidden">
+        <div class="popup-content">
+            <div class="popup-icon">🎁</div>
+            <h3>Daily Reward!</h3>
+            <p>You've earned <span>50 Bonus Coins</span></p>
+            <button id="close-popup" class="btn btn-neon btn-sm">Claim Now</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
